@@ -83,7 +83,7 @@ class Defualt_Rt:
         if self.num_plate == self.excu_plate:
             bonus = 50
             self.result = self.result * (100 - bonus) // 100
-            print("คุณได้ส่วนลด 50%!")
+            bonus_text = "ยินดีด้วย คุณได้ส่วนลด 50%!"
 
 #------- User เลือกอาหาร ใช้หน่วย(text)=จาน / เลือกอันอื่น(เครื่องดื่ม)=ขวด
         if self.user_input in self.menu:
@@ -93,10 +93,13 @@ class Defualt_Rt:
         
         if minute == 0:
             text_box = f"คุณได้สั่ง {self.user_input} จำนวน {self.amount}{text} จอดรถ {hours}ชั่วโมง"
+
         else:
             text_box = f"คุณได้สั่ง {self.user_input} จำนวน {self.amount}{text} จอดรถ {hours}ชั่วโมง {minute}นาที"
 
         print(text_box)
+        if self.num_plate == self.excu_plate:
+            print(bonus_text)
         time.sleep(0.5)
 
 #------- บอกเวลาจอดรถและราคาอาหาร
@@ -123,8 +126,13 @@ class Defualt_Rt:
         return f"|กำลังทอน {new_result}บาท|"
         time.sleep(3)
 
-user1 = Defualt_Rt()
-print(user1.cal_menu(2, 0))
+# user1 = Defualt_Rt()
+# print(user1.cal_menu(2, 0))
+
+class rest_systhem(Defualt_Rt):
+    def __init__(self):
+        super().__init__()
+        self.owner = "Prem"
         
         
             
