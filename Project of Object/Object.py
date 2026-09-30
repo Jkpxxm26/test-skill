@@ -1,7 +1,8 @@
 # แผนอัพเดตระบบในอนาคต 
-# (1) ระบบนาที
-# (2) ระบบถ้าจ่ายเงินจำนวนเงินน้อยกว่าราคาอาหารรวม ให้สามารถจ่ายเงินเพิ่มได้ จนกว่าจะครบ
-# (3) ระบบ Vat 7%
+# (1) เพิ่มข้อมูลData ที่ลูกค้าสั่งเข้าไฟล์ txt เขียนได้ อ่านได้
+# (2) ระบบนาที
+# (3) ระบบถ้าจ่ายเงินจำนวนเงินน้อยกว่าราคาอาหารรวม ให้สามารถจ่ายเงินเพิ่มได้ จนกว่าจะครบ
+# (4) ระบบ Vat 7%
 import time
 
 class Defualt_Rt:
@@ -13,7 +14,7 @@ class Defualt_Rt:
         self.soft_drink = ["Cola", "Est", "Fanta"]
         self.nm_drink = ["Water", "Mineral"]
         self.all_drink = self.A_drink + self.soft_drink + self.nm_drink
-        self.all_menu = self.menu + self.A_drink + self.all_drink
+        self.all_menu = self.menu + self.all_drink
 
 #------ รับข้อมูล อาหาร / จำนวน
         while True:
@@ -68,7 +69,7 @@ class Defualt_Rt:
         #     hours = hours + 1
         #     minute =  ------[รออัพเดต]
                
-        if hours >= 1 or minute == 60:
+        if hours >= 1 or minute == 60:  #----- ปรับแบบเหมาจ่าย นึกถึงความเป็นจริง
             price_hours = 20
             
         elif hours == 0 and 0 < minute < 60:
@@ -116,7 +117,7 @@ class Defualt_Rt:
 
             if user_insert_money <= 0 or user_insert_money < self.result:
                 print("จำนวนเงินไม่พอ!")
-                continue 
+                continue  #----- แก้ / เพิ่มเงื่อนไข (ไปต่อหรือยกเลิก)
             else:
                 break
             
@@ -124,10 +125,10 @@ class Defualt_Rt:
         time.sleep(1)
         
         return f"|กำลังทอน {new_result}บาท|"
-        time.sleep(3)
+        time.sleep(3) #------- แก้
 
-# user1 = Defualt_Rt()
-# print(user1.cal_menu(2, 0))
+user1 = Defualt_Rt()
+print(user1.cal_menu(2, 0))
 
 class rest_systhem(Defualt_Rt):
     def __init__(self):
