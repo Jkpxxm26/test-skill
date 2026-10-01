@@ -64,8 +64,3 @@
 
 
 # print(Read_file_function())
-
-x = 0
-while x < 10:
-    x += 1
-    print()

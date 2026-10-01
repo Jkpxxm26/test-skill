@@ -1,0 +1,32 @@
+* {
+    background-color: skyblue;
+    box-sizing: 0;
+}
+
+body {
+  margin: 0;
+  height: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  grid: row; 
+}
+
+input * {
+    background-color: white;
+    color: white
+}
+
+p {
+    background-color: white;
+    border: solid whitesmoke;
+    border-radius: 20px;
+}
+
+.button {
+    background-color: white;
+}
+
+button :hover {
+    font-size: 20px;
+}
