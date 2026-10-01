@@ -71,23 +71,20 @@ class Defualt_Rt:
         price_hours = 20 if total_hours >= 1 else 0
 
 #-------คำนวณราคาอาหาร + ราคาจอดรถ      
-        raw_price = (self.amount * price) / 1.07
-        self.result_price = int(raw_price * 100 + 0.5) / 10
-
-        raw_vat = self.result_price * 7 / 100
-        self.result_vat = int(raw_vat * 100 + 0.5) / 100        
+        total_food_price = self.amount * price
+        self.result_price = round(total_food_price / 1.07, 2)  # ราคาอาหารก่อน VAT
+        self.result_vat = round(total_food_price - self.result_price, 2) # ยอด VAT 7%
         self.result_time = total_hours * price_hours
-        self.result = self.result_price + self.result_time
+        self.result = total_food_price + self.result_time 
 
 
 #-------ส่วนลด      
         bonus_text = ""
         if self.num_plate == self.excu_plate:
             bonus = 50
-            discounted_total = round((self.result * (100 - bonus)) / 100, 2)
-            self.result_price = round(discounted_total / 1.05, 2)
-            self.result_vat = round(self.result_price * 5 / 100, 2)
-            self.result = discounted_total
+            self.result = round((self.result * (100 - bonus)) / 100, 2)
+            self.result_price = round(self.result / 1.07, 2)
+            self.result_vat = round(self.result - self.result_price, 2)
             bonus_text = "ยินดีด้วย คุณได้ส่วนลด 50%!"
 
         text = "จาน" if self.user_input in self.menu else "ขวด"
@@ -158,7 +155,7 @@ class Defualt_Rt:
 
             new_result = round(self.cash_user - self.result, 2)
             time.sleep(1)
-            print("\n|ทำรายการชำระเงินสดสำเร็จ ขอบคุณครับ/ค่ะ|")
+            print("\n|ทำรายการชำระสำเร็จ ขอบคุณครับ/ค่ะ|")
             return f"|รับเงินมา {self.cash_user:.2f} บาท | เงินทอนของคุณคือ {new_result:.2f} บาท|"
 
 # user1 = Defualt_Rt()
