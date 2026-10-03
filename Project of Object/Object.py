@@ -97,6 +97,8 @@ class Defualt_Rt:
         time.sleep(1)
 
 #-------ระบบจ่ายเงิน (Cash / Card)
+        text_end = ""
+
         while True:
             print("ต้องการจ่ายเงินรูปแบบไหน")
             self.Cash_card = input("Cash / Card? : ").strip().capitalize()
@@ -118,14 +120,16 @@ class Defualt_Rt:
                         if yes_no == "Yes":
                             continue
                         else:
-                            return "|ยกเลิกรายการสั่งซื้อ|"
+                            text_end =  "|ยกเลิกรายการสั่งซื้อ|"
+                            break
                     else:
                         break    
 
                 time.sleep(1)
                 print("|ระบบกำลังประมวลผลบัตรเครดิต...|")
                 time.sleep(1.5)
-                return f"|ชำระสำเร็จ!|"
+                text_end =  f"|ชำระสำเร็จ!|"
+                break
                 
     #-------(Cash)
             elif self.Cash_card == "Cash":
@@ -145,16 +149,20 @@ class Defualt_Rt:
                         continue
                     else:
                         break
+
+                new_result = round(self.cash_user - total_all, 2)
+                time.sleep(1)
+                print("\n|ทำรายการชำระสำเร็จ ขอบคุณครับ/ค่ะ|")
+                text_end = f"|รับเงินมา {self.cash_user:.2f} บาท | เงินทอนของคุณคือ {new_result:.2f} บาท|"
+                break
+            
             else:
                 print("วิธีการชำระเงินไม่ถูกต้อง")
                 time.sleep(1)
                 print("โปรดเลือกใหม่!\n")
                 continue
 
-            new_result = round(self.cash_user - total_all, 2)
-            time.sleep(1)
-            print("\n|ทำรายการชำระสำเร็จ ขอบคุณครับ/ค่ะ|")
-            return f"|รับเงินมา {self.cash_user:.2f} บาท | เงินทอนของคุณคือ {new_result:.2f} บาท|"
+        return text_end
 
 # user1 = Defualt_Rt()
 # print(user1.cal_menu(2, 15))
