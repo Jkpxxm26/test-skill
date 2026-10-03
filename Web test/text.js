@@ -1,10 +1,15 @@
-const h1 = 0
-const user_input = inputNumber
+const add_num = () => {
+    const pElement = document.querySelector('#result');
+    let currentTotal = parseInt(pElement.innerText) || 0;
 
-add_num = () => {
-    addEventListener("click", h1 += 1)
+    const inputElement = document.querySelector('#number');
+    let inputValue = parseInt(inputElement.value) || 0;
+
+    let newTotal = currentTotal + inputValue;
+
+    pElement.innerText = newTotal;
+
+    inputElement.value = '';
 }
 
-if (
-    user_input
-)
+document.querySelector('.button').addEventListener('click', add_num);

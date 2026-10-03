@@ -63,29 +63,21 @@ class Defualt_Rt:
         else:
             price = 0
 
-#-------ราคาจอดรถรายชั่วโมง
-        total_hours = hours
-        if 50 <= minute < 60:
-            total_hours += 1
-            
-        price_hours = 20 if total_hours >= 1 else 0
-
-#-------คำนวณราคาอาหาร + ราคาจอดรถ      
+#-------คำนวณราคาอาหาร + ราคาจอดรถ  
+        import calVat   
         total_food_price = self.amount * price
-        self.result_price = round(total_food_price / 1.07, 2)  # ราคาอาหารก่อน VAT
-        self.result_vat = round(total_food_price - self.result_price, 2) # ยอด VAT 7%
-        self.result_time = total_hours * price_hours
-        self.result = total_food_price + self.result_time 
+        calVat.Vat(self.num_plate, self.excu_plate, total_food_price, hours, minute) #---> เรียกใช้ฟังก์ชั่นในโมดูล
 
 
-#-------ส่วนลด      
+#------- สร้างตัวแปรมารับค่า 4 ตัวที่รีเทิร์นออกมาจากโมดูล
+        res_price, res_vat, res_time, total_all = calVat.Vat(self.num_plate, self.excu_plate, total_food_price, hours, minute)
+
+
+#-------ส่วนลด (excu_plate)   
+        import calVat
         bonus_text = ""
-        if self.num_plate == self.excu_plate:
-            bonus = 50
-            self.result = round((self.result * (100 - bonus)) / 100, 2)
-            self.result_price = round(self.result / 1.07, 2)
-            self.result_vat = round(self.result - self.result_price, 2)
-            bonus_text = "ยินดีด้วย คุณได้ส่วนลด 50%!"
+        calVat.Vat(self.num_plate, self.excu_plate, total_food_price, hours, minute)
+        bonus_text = "ยินดีด้วย คุณได้ส่วนลด 50%!"
 
         text = "จาน" if self.user_input in self.menu else "ขวด"
 
@@ -99,61 +91,67 @@ class Defualt_Rt:
             print(bonus_text)
         time.sleep(0.5)
 
-        print(f"|ราคาอาหารก่อนรวมVat: {self.result_price} / Vat: {self.result_vat}บาท|\n")
+        print(f"|ราคาอาหารก่อนรวมVat: {res_price} / Vat: {res_vat}บาท|\n")
         time.sleep(1)
-        print(f"|ราคารวมสุทธิ {self.result} บาท|\n")
+        print(f"|ราคารวมสุทธิ {total_all} บาท|\n")
         time.sleep(1)
 
 #-------ระบบจ่ายเงิน (Cash / Card)
-        print("ต้องการจ่ายเงินรูปแบบไหน")
-        self.Cash_card = input("Cash / Card? : ").strip().capitalize()
-        
-#-------(Card)
-        if self.Cash_card == "Card":
-            while True:
-                self.user_cart = input("ใส่เลขบัตรเครดิต: ")
-                try:
-                    self.user_insert_money = float(input("ใส่จำนวนเงิน: "))            
-                except ValueError:
-                    print("ใส่แต่ตัวเลขเท่านั้น!\n")
-                    continue
+        while True:
+            print("ต้องการจ่ายเงินรูปแบบไหน")
+            self.Cash_card = input("Cash / Card? : ").strip().capitalize()
+            
+    #-------(Card)
+            if self.Cash_card == "Card":
+                while True:
+                    self.user_cart = input("ใส่เลขบัตรเครดิต: ")
+                    try:
+                        self.user_insert_money = float(input("ใส่จำนวนเงิน: "))            
+                    except ValueError:
+                        print("ใส่แต่ตัวเลขเท่านั้น!\n")
+                        continue
 
-                if self.user_insert_money < self.result:
-                    print("ยอดเงินไม่เพียงพอในบัตร!\n")
-                    time.sleep(1)
-                    yes_no = input("ต้องการเปลี่ยนบัตรเพื่อทำรายการต่อไหม? (Yes/No): ").strip().capitalize()
-                    if yes_no == "Yes":
+                    if self.user_insert_money < total_all:
+                        print("ยอดเงินไม่เพียงพอในบัตร!\n")
+                        time.sleep(1)
+                        yes_no = input("ต้องการเปลี่ยนบัตรเพื่อทำรายการต่อไหม? (Yes/No): ").strip().capitalize()
+                        if yes_no == "Yes":
+                            continue
+                        else:
+                            return "|ยกเลิกรายการสั่งซื้อ|"
+                    else:
+                        break    
+
+                time.sleep(1)
+                print("|ระบบกำลังประมวลผลบัตรเครดิต...|")
+                time.sleep(1.5)
+                return f"|ชำระสำเร็จ!|"
+                
+    #-------(Cash)
+            elif self.Cash_card == "Cash":
+                self.cash_user = 0
+                while True:
+                    try:
+                        self.pay_cash = float(input("หยอดเงิน/ใส่เงินสด: "))
+                    except ValueError:
+                        print("กรุณาใส่เป็นตัวเลขเงินเท่านั้น!")
+                        continue
+                        
+                    self.cash_user = round(self.cash_user + self.pay_cash, 2)
+
+                    if self.cash_user < total_all:
+                        remaining = round(total_all - self.cash_user, 2)
+                        print(f"ยังขาดเงินอีก {remaining} บาท")
                         continue
                     else:
-                        return "|ยกเลิกรายการสั่งซื้อ|"
-                else:
-                    break    
+                        break
+            else:
+                print("วิธีการชำระเงินไม่ถูกต้อง")
+                time.sleep(1)
+                print("โปรดเลือกใหม่!\n")
+                continue
 
-            time.sleep(1)
-            print("|ระบบกำลังประมวลผลบัตรเครดิต...|")
-            time.sleep(1.5)
-            return f"|ชำระสำเร็จ!|"
-            
-#-------(Cash)
-        elif self.Cash_card == "Cash":
-            self.cash_user = 0
-            while True:
-                try:
-                    self.pay_cash = float(input("หยอดเงิน/ใส่เงินสด: "))
-                except ValueError:
-                    print("กรุณาใส่เป็นตัวเลขเงินเท่านั้น!")
-                    continue
-                    
-                self.cash_user = round(self.cash_user + self.pay_cash, 2)
-
-                if self.cash_user < self.result:
-                    remaining = round(self.result - self.cash_user, 2)
-                    print(f"ยังขาดเงินอีก {remaining} บาท")
-                    continue
-                else:
-                    break
-
-            new_result = round(self.cash_user - self.result, 2)
+            new_result = round(self.cash_user - total_all, 2)
             time.sleep(1)
             print("\n|ทำรายการชำระสำเร็จ ขอบคุณครับ/ค่ะ|")
             return f"|รับเงินมา {self.cash_user:.2f} บาท | เงินทอนของคุณคือ {new_result:.2f} บาท|"
