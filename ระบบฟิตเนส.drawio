@@ -1,0 +1,344 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="หน้า-1" id="1mJcbieqwajKAo5nIHt_">
+    <mxGraphModel dx="2241" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-7" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FeWw6Dz3iIIDC9_obTUy-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fontSize=15;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value="ระบบสมัครฟิตเนส" vertex="1">
+          <mxGeometry height="70" width="170" x="315" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-22" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="FeWw6Dz3iIIDC9_obTUy-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-6" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;fillColor=#ffcc99;strokeColor=#36393d;" value="รับข้อมูลจากสมาชิก" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-28" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="FeWw6Dz3iIIDC9_obTUy-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-29" connectable="0" parent="FeWw6Dz3iIIDC9_obTUy-28" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.14" y="1" as="geometry">
+            <mxPoint x="89" y="-89" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-36" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="FeWw6Dz3iIIDC9_obTUy-35" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-37" connectable="0" parent="FeWw6Dz3iIIDC9_obTUy-36" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.0222" as="geometry">
+            <mxPoint y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-19" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;" value="มีชื่ออยู่ในฐานข้อมูลไหม" vertex="1">
+          <mxGeometry height="80" width="140" x="330" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-23" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FeWw6Dz3iIIDC9_obTUy-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-21" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="ดูฐานข้อมูล ไฟล์ txt." vertex="1">
+          <mxGeometry height="80" width="80" x="360" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-139" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="FeWw6Dz3iIIDC9_obTUy-138" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-26" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;fillColor=#ffcc99;strokeColor=#36393d;" value="พิมพ์ วันเวลาเข้าฟิตเนส" vertex="1">
+          <mxGeometry height="60" width="120" x="125" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-32" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="บันทึกข้อมูลเข้าฟิตเนส ลงฐานข้อมูลเวลาเข้า" vertex="1">
+          <mxGeometry height="90" width="110" x="-640" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-56" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="FeWw6Dz3iIIDC9_obTUy-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-35" parent="1" style="whiteSpace=wrap;html=1;" value="ไปหน้าสมัครสมาชิก" vertex="1">
+          <mxGeometry height="60" width="120" x="560" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-63" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="FeWw6Dz3iIIDC9_obTUy-62" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="288" as="sourcePoint" />
+            <mxPoint x="970" y="248" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-64" connectable="0" parent="FeWw6Dz3iIIDC9_obTUy-63" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.3" y="-2" as="geometry">
+            <mxPoint x="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-87" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="FeWw6Dz3iIIDC9_obTUy-86" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-89" connectable="0" parent="FeWw6Dz3iIIDC9_obTUy-87" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.2333" y="-3" as="geometry">
+            <mxPoint x="1" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-38" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;" value="อายุ &amp;gt;= 20 ไหม?" vertex="1">
+          <mxGeometry height="80" width="150" x="895" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-42" parent="1" style="whiteSpace=wrap;html=1;" value="แสดงข้อความ คุณสมัครสมาชิกเรียบร้อย" vertex="1">
+          <mxGeometry height="60" width="120" x="911.25" y="1152" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-95" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="FeWw6Dz3iIIDC9_obTUy-94" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-47" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="บันทึกข้อมูลชื่อ วันที่ วันเวลาที่สมัคร ลงฐานข้อมูล" vertex="1">
+          <mxGeometry height="80" width="110" x="633" y="1142" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-57" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="FeWw6Dz3iIIDC9_obTUy-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-52" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;fillColor=#ffcc99;strokeColor=#36393d;" value="รับ ชื่อ นามสกุล อายุ วันเวลาที่สมัคร" vertex="1">
+          <mxGeometry height="60" width="120" x="730" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-68" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="FeWw6Dz3iIIDC9_obTUy-67" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-62" parent="1" style="whiteSpace=wrap;html=1;" value="แสดงข้อความ &quot;อายุต่ำกว่าเกณฑ์&quot;" vertex="1">
+          <mxGeometry height="60" width="120" x="910" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-85" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="FeWw6Dz3iIIDC9_obTUy-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-67" parent="1" style="whiteSpace=wrap;html=1;" value="แสดงข้อความว่า ได้รับส่วนลดราคาสมัครค่าฟิตเนส 25%" vertex="1">
+          <mxGeometry height="60" width="120" x="1181" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-76" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="FeWw6Dz3iIIDC9_obTUy-75" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-77" connectable="0" parent="FeWw6Dz3iIIDC9_obTUy-76" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Card" vertex="1">
+          <mxGeometry relative="1" x="0.0222" y="2" as="geometry">
+            <mxPoint x="-5" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-79" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="FeWw6Dz3iIIDC9_obTUy-78" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-80" connectable="0" parent="FeWw6Dz3iIIDC9_obTUy-79" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="cash" vertex="1">
+          <mxGeometry relative="1" x="-0.4957" as="geometry">
+            <mxPoint x="12" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-73" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;" value="จ่ายค่าสมัครฟิตเนส (บัตรเดรดิต / เงินสด)" vertex="1">
+          <mxGeometry height="80" width="205" x="867.5" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-121" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FeWw6Dz3iIIDC9_obTUy-111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-75" parent="1" style="whiteSpace=wrap;html=1;" value="ใส่เลขบัตร และ จำนวนเงิน" vertex="1">
+          <mxGeometry height="60" width="120" x="910" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="YBxuZMZjpqd6R5MWjpxd-4" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="YBxuZMZjpqd6R5MWjpxd-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-78" parent="1" style="whiteSpace=wrap;html=1;" value="สมมุติใส่แบงค์ทีละใบ&lt;div&gt;และเงินค่อยๆเพิ่มในระบบจนครบ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1181" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-91" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="FeWw6Dz3iIIDC9_obTUy-90" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-84" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;fillColor=#ffcc99;strokeColor=#36393d;" value="รับ ชื่อ นามสกุล อายุ วันเวลาที่สมัคร" vertex="1">
+          <mxGeometry height="60" width="120" x="1410" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-88" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FeWw6Dz3iIIDC9_obTUy-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-86" parent="1" style="whiteSpace=wrap;html=1;" value="แสดงราคาที่ต้องจ่าย" vertex="1">
+          <mxGeometry height="60" width="120" x="910" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-108" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FeWw6Dz3iIIDC9_obTUy-73">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1470" y="520" />
+              <mxPoint x="970" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-90" parent="1" style="whiteSpace=wrap;html=1;" value="แสดงราคาสมัครที่ลดแล้ว พร้อมบอกว่าลดกี่%" vertex="1">
+          <mxGeometry height="60" width="120" x="1410" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-135" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="FeWw6Dz3iIIDC9_obTUy-96">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-94" parent="1" style="whiteSpace=wrap;html=1;" value="คุุณต้องการเข้าใช้ฟิตเนสเลยไหม" vertex="1">
+          <mxGeometry height="60" width="120" x="343.75" y="1152" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-106" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="FeWw6Dz3iIIDC9_obTUy-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-134" connectable="0" parent="FeWw6Dz3iIIDC9_obTUy-106" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.8274" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-125" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FeWw6Dz3iIIDC9_obTUy-100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-133" connectable="0" parent="FeWw6Dz3iIIDC9_obTUy-125" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="2" as="geometry">
+            <mxPoint x="-3" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-96" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;" value="เข้า / ไม่?" vertex="1">
+          <mxGeometry height="80" width="120" x="125" y="1142" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-103" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="FeWw6Dz3iIIDC9_obTUy-102" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-100" parent="1" style="whiteSpace=wrap;html=1;" value="ขอบคุณสำหรับการสมัครสมาชิก" vertex="1">
+          <mxGeometry height="60" width="120" x="125" y="1282.97" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-102" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value="จบการทำงาน" vertex="1">
+          <mxGeometry height="80" width="120" x="125" y="1404" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-118" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="FeWw6Dz3iIIDC9_obTUy-117" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-111" parent="1" style="whiteSpace=wrap;html=1;" value="ใส่ตัวอักษรในจำนวนเงิน / จำนวนเงิน &amp;lt; ราคาสมัคร" vertex="1">
+          <mxGeometry height="60" width="140" x="900" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-124" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FeWw6Dz3iIIDC9_obTUy-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-129" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="FeWw6Dz3iIIDC9_obTUy-128" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-131" connectable="0" parent="FeWw6Dz3iIIDC9_obTUy-129" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.4973" y="-1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-117" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" value="ใส่ข้อความลงจำนวนเงิน/ จำนวนเงิน &amp;lt; ราคาสมัคร" vertex="1">
+          <mxGeometry height="80" width="205" x="867.5" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-137" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-128" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="FeWw6Dz3iIIDC9_obTUy-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-128" parent="1" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;" value="ตรวจจับError ไม่ขึ้นError แล้ววนกลับไปหน้าใส่จำนวนเงิน" vertex="1">
+          <mxGeometry height="60" width="120" x="1181" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-132" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="No" vertex="1">
+          <mxGeometry height="30" width="60" x="954.25" y="1103" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-136" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="FeWw6Dz3iIIDC9_obTUy-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-144" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="FeWw6Dz3iIIDC9_obTUy-142">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-167.5" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-145" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FeWw6Dz3iIIDC9_obTUy-143">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-138" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;" value="เป็นวัน จ-ศ หรือ ส-อา" vertex="1">
+          <mxGeometry height="80" width="185" x="-260" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-147" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-142" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="FeWw6Dz3iIIDC9_obTUy-146" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-142" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="เป็นวัน จ-ศ" vertex="1">
+          <mxGeometry height="60" width="120" x="-227.5" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-153" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-143" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FeWw6Dz3iIIDC9_obTUy-152">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-143" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="เป็นวัน ส-อา" vertex="1">
+          <mxGeometry height="60" width="120" x="-227.5" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-155" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-146" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="FeWw6Dz3iIIDC9_obTUy-149">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-158" connectable="0" parent="FeWw6Dz3iIIDC9_obTUy-155" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.5855" as="geometry">
+            <mxPoint x="26" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-162" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-146" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="FeWw6Dz3iIIDC9_obTUy-161" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-146" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;rounded=0;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" value="ลงเวลาเข้า ตรงกับเวลาเปิดฟิตเนสไหม&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; (15:00 - 19:00)" vertex="1">
+          <mxGeometry height="90" width="205" x="-270" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-157" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-149" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="FeWw6Dz3iIIDC9_obTUy-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-500" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-149" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="แสดงข้อความ ลงเวลาเรียบร้อย1" vertex="1">
+          <mxGeometry height="60" width="120" x="-460" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-156" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-152" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="FeWw6Dz3iIIDC9_obTUy-149">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-164" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-152" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="FeWw6Dz3iIIDC9_obTUy-163" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-152" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;rounded=0;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" value="ลงเวลาเข้า ตรงกับเวลาเปิดฟิตเนสไหม&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;(9:00 - 19:00)" vertex="1">
+          <mxGeometry height="70" width="205" x="-270" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-159" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="-370" y="1033" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-167" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-161" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="FeWw6Dz3iIIDC9_obTUy-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="275" />
+              <mxPoint x="40" y="680" />
+              <mxPoint x="155" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-161" parent="1" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=0;gradientColor=#ea6b66;" value="แสดงข้อความ เวลานี้ไม่ตรงกับเวลาเปิดฟิตเนส&lt;div&gt;วนกลับ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="-227.5" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-168" edge="1" parent="1" source="FeWw6Dz3iIIDC9_obTUy-163" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="FeWw6Dz3iIIDC9_obTUy-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="1182" />
+              <mxPoint x="40" y="800" />
+              <mxPoint x="155" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeWw6Dz3iIIDC9_obTUy-163" parent="1" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=0;gradientColor=#ea6b66;" value="แสดงข้อความ เวลานี้ไม่ตรงกับเวลาเปิดฟิตเนส&lt;div&gt;วนกลับ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="-227.5" y="1152" as="geometry" />
+        </mxCell>
+        <mxCell id="YBxuZMZjpqd6R5MWjpxd-8" edge="1" parent="1" source="YBxuZMZjpqd6R5MWjpxd-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="YBxuZMZjpqd6R5MWjpxd-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YBxuZMZjpqd6R5MWjpxd-10" connectable="0" parent="YBxuZMZjpqd6R5MWjpxd-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="ครบ" vertex="1">
+          <mxGeometry relative="1" y="1" as="geometry">
+            <mxPoint x="-2" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YBxuZMZjpqd6R5MWjpxd-12" edge="1" parent="1" source="YBxuZMZjpqd6R5MWjpxd-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="YBxuZMZjpqd6R5MWjpxd-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YBxuZMZjpqd6R5MWjpxd-3" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="เงินที่ใส่เข้ามาครบไหม" vertex="1">
+          <mxGeometry height="80" width="160" x="1340" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="YBxuZMZjpqd6R5MWjpxd-9" edge="1" parent="1" source="YBxuZMZjpqd6R5MWjpxd-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="FeWw6Dz3iIIDC9_obTUy-42">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1420" y="1182" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YBxuZMZjpqd6R5MWjpxd-7" parent="1" style="whiteSpace=wrap;html=1;" value="ทอนเงิน" vertex="1">
+          <mxGeometry height="60" width="120" x="1360" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="YBxuZMZjpqd6R5MWjpxd-13" edge="1" parent="1" source="YBxuZMZjpqd6R5MWjpxd-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FeWw6Dz3iIIDC9_obTUy-78">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1470" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YBxuZMZjpqd6R5MWjpxd-11" parent="1" style="whiteSpace=wrap;html=1;" value="บอกจำนวณเงินที่ขาด&lt;div&gt;พร้อมแสดงข้อความ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1600" y="570" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
