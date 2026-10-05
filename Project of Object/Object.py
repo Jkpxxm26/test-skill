@@ -1,10 +1,11 @@
 # แผนอัพเดตระบบในอนาคต 
-# (1) เพิ่มข้อมูลData ที่ลูกค้าสั่งเข้าไฟล์ txt เขียนได้ อ่านได้
+# (1) เพิ่มข้อมูลData ที่ลูกค้าสั่งเข้าไฟล์ txt เขียนได้ อ่านได้ [เหลือทำให้อ่านไฟล์ได้ และรวมจำนวน Orderทั้งหมด]-----!
 # (2) ระบบนาที --- เสร็จ
 # (3) ระบบถ้าจ่ายเงินจำนวนเงินน้อยกว่าราคาอาหารรวม ให้สามารถจ่ายเงินเพิ่มได้ จนกว่าจะครบ --- เสร็จ
 # (4) ระบบ Vat 7% --- เสร็จ
 
 import time
+from pathlib import Path
 
 class Defualt_Rt:
     def __init__(self):
@@ -83,8 +84,9 @@ class Defualt_Rt:
 
         if minute == 0:
             text_box = f"คุณได้สั่ง {self.user_input} จำนวน {self.amount} {text} จอดรถ {hours} ชั่วโมง"
+
         else:
-            text_box = f"คุณได้สั่ง {self.user_input} จำนวน {self.amount} {text} จอดรถ {hours} ชั่วโมง {minute} นาที"
+            text_box = f"คุณได้สั่ง {self.user_input} จำนวน {self.amount} ราคา {total_all} บาท {text} จอดรถ {hours} ชั่วโมง {minute} นาที"
 
         print("\n" + text_box)
         if self.num_plate == self.excu_plate:
@@ -162,7 +164,22 @@ class Defualt_Rt:
                 print("โปรดเลือกใหม่!\n")
                 continue
 
+#------- เก็บข้อมูลการสั่งซื้อลูกค้า
+        file_path = Path(__file__).parent / "Order.txt"
+        Order_text = ""
+        Order_text = f"{self.num_plate} สั่ง {self.user_input} จำนวน {self.amount}{text} | {total_all}บาท ชำระเงินแบบ {self.Cash_card} | \n"
+
+        with file_path.open("a", encoding="utf-8") as Order_data:
+            Order_data.write(Order_text)
+
         return text_end
+
+#--- ยังไม่เสร็จ
+    def Read_data():
+        with open("Order.txt", "r", encoding="utf-8") as order_data:
+            result = order_data.readlines()
+            return result
+
 
 # user1 = Defualt_Rt()
 # print(user1.cal_menu(2, 15))
@@ -173,4 +190,4 @@ class Rest_systhem(Defualt_Rt):
         self.owner = "Prem"
 
 user2 = Rest_systhem()
-print(user2.cal_menu(2, 50))
+print(user2.Read_data())
