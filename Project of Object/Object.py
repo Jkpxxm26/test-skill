@@ -1,8 +1,10 @@
 # แผนอัพเดตระบบในอนาคต 
-# (1) เพิ่มข้อมูลData ที่ลูกค้าสั่งเข้าไฟล์ txt เขียนได้ อ่านได้ [เหลือทำให้อ่านไฟล์ได้ และรวมจำนวน Orderทั้งหมด]-----!
+# (1) เพิ่มข้อมูลData ที่ลูกค้าสั่งเข้าไฟล์ txt เขียนได้ อ่านได้ --- เสร็จ
 # (2) ระบบนาที --- เสร็จ
 # (3) ระบบถ้าจ่ายเงินจำนวนเงินน้อยกว่าราคาอาหารรวม ให้สามารถจ่ายเงินเพิ่มได้ จนกว่าจะครบ --- เสร็จ
 # (4) ระบบ Vat 7% --- เสร็จ
+# (5) จัดโค๊ดให้เรียบร้อย / อันไหนเปลี่ยนเป็น Modulได้ เปลี่ยน
+# (6) คำนวณรายได้ยอดขาย จากประวัติการสั่ง
 
 import time
 from pathlib import Path
@@ -175,10 +177,14 @@ class Defualt_Rt:
         return text_end
 
 #--- ยังไม่เสร็จ
+    @staticmethod
     def Read_data():
-        with open("Order.txt", "r", encoding="utf-8") as order_data:
+        file_path = Path(__file__).parent / "Order.txt"
+
+        with file_path.open("r", encoding="utf-8") as order_data:
             result = order_data.readlines()
-            return result
+
+        return len(result)
 
 
 # user1 = Defualt_Rt()
@@ -189,5 +195,11 @@ class Rest_systhem(Defualt_Rt):
         super().__init__()
         self.owner = "Prem"
 
+    @staticmethod
+    def check_order():
+        total_order = Defualt_Rt.Read_data()
+        print(f"มียอด Order ทั้งหมด: {total_order}")
+
 user2 = Rest_systhem()
-print(user2.Read_data())
+print(user2.cal_menu(3, 43))
+# Rest_systhem.check_order()
